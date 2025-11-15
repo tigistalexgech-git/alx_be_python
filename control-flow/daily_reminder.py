@@ -23,8 +23,8 @@ match priority:
 # Modify message if task is time-bound
 if time_bound == "yes":
     reminder += " that requires immediate attention today!"
-    print("\nReminder:", reminder)
 else:
     reminder += ". Consider completing it when you have free time."
-    print("\nNote:", reminder)
- 
+
+# Print reminder (single consistent print statement)
+print("\nReminder:", reminder)

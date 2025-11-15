@@ -2,8 +2,8 @@
 
 #Prompt user for numbers
 try:
-    number1 = int(input("Enter the first number : "))
-    number2 = int(input("Enter the second number:"))
+    first_number = int(input("Enter the first number : "))
+    second_number = int(input("Enter the second number:"))
 except ValueError:
         print("Invalid input. Please enter numbers.")
         exit()
@@ -16,14 +16,14 @@ result = None
 # Match Case to perform calculation
 match operation:
    case "+":
-        result = number1 + number2
+        result = first_number + second_number
    case "-":
-        result = number1 - number2
+        result = first_number - second_number
    case "*":
-          result = number1 * number2
+          result = first_number * second_number
    case "/":
-          if number2 != 0:
-                result = number1 / number2
+          if second_number != 0:
+                result = first_number / second_number
           else:
                 print("Error:Devision by zero is not allowed.")
    case _:

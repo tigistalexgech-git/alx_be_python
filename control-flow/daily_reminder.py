@@ -25,6 +25,6 @@ while True:
         message += ". Consider completing it when you have free time."
    
    # Print the final message
-    print("\nReminder: ", message)
+    print("Reminder: ", message)
     
     break

@@ -10,21 +10,21 @@ while True:
     #process using matchcase 
     match priority:
         case "high":
-            message = f"'{task}' is a high priority task"
+            reminder = f"'{task}' is a high priority task"
         case "medium":
-            message = f"'{task}' is a medium priority task"
+            reminder = f"'{task}' is a medium priority task"
         case "low":
-            message = f"'{task} is a low priority task"
+            reminder = f"'{task} is a low priority task"
         case _:
-            message = f"'{task}' has an unknown priority level"
+            reminder = f"'{task}' has an unknown priority level"
      
     # Modify message if task is time-bound       
     if time_bound == "yes":
-        message += " that requires immediate attention today!"
+        reminder += " that requires immediate attention today!"
     elif time_bound == "no":
-        message += ". Consider completing it when you have free time."
+        reminder += ". Consider completing it when you have free time."
    
    # Print the final message
-    print("Reminder: ", message)
+    print("\nReminder: ", reminder)
     
     break
